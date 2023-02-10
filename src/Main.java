@@ -18,11 +18,9 @@ public class Main {
         }
         System.out.println("Choose mode: asc/desc");
         String mode = scanner.next();
-        scanner.close();
-        // System.out.println(dataSet);
-
         System.out.println("Choose sorting algorithm: bubble/selection/quick");
         String algorithm = scanner.next();
+        scanner.close();
 
         switch (algorithm) {
             case ("bubble"):
