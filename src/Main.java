@@ -18,7 +18,7 @@ public class Main {
         }
         System.out.println("Choose mode: asc/desc");
         String mode = scanner.next();
-        System.out.println("Choose sorting algorithm: bubble/selection/quick/merge");
+        System.out.println("Choose sorting algorithm: bubble/selection/quick/merge/insertion");
         String algorithm = scanner.next();
         scanner.close();
 
@@ -34,6 +34,9 @@ public class Main {
                 break;
             case ("merge"):
                 System.out.println(MergeSort.execute(dataSet, mode));
+                break;
+            case ("insertion"):
+                System.out.println(InsertionSort.execute(dataSet, mode));
                 break;
             default:
                 System.out.println("Error");
