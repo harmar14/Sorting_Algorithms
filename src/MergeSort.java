@@ -3,13 +3,15 @@ import java.util.ArrayList;
 public class MergeSort {
     public static ArrayList execute(ArrayList <Integer> dataSet, String mode) {
 
-        ArrayList <Integer> array = new ArrayList(dataSet); // we should not change an original array
+        ArrayList <Integer> array = new ArrayList (dataSet); // we should not change an original array
+
         ArrayList <Integer> tmp;
         ArrayList <Integer> currentList = array;
         ArrayList <Integer> currentResult = new ArrayList();
         for (int i = 0; i < array.size(); i++) {
             currentResult.add(0);
         }
+
         int size = 1;
 
         while (size < array.size()) {
